@@ -1,0 +1,64 @@
+/* مسیر فایل: src/components/Navbar/Navbar.css */
+
+/* .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  } */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* توزیع یکنواخت */
+    align-items: center;
+    padding: 10px 15px; /* کاهش پدینگ از اطراف */
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 15px;
+    margin-left: 100px;
+}
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 100px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 8px 15px; /* افزایش پدینگ برای عریض‌تر شدن */
+    border-radius: 8px;
+    border: 3px solid black;
+    border: none;
+    width: 400px; /* افزایش عرض جعبه جستجو */
+}
+
+.search-box input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 8px; /* افزایش padding برای بزرگتر شدن ورودی */
+    width: 100%; /* ورودی تمام عرض جعبه جستجو رو می‌گیره */
+    text-align: right;
+}
+
+.search-icon {
+    color: gray;
+    cursor: pointer;
+}
+
+.logo {
+    height: 40px;
+}

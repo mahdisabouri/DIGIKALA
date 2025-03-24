@@ -1,0 +1,90 @@
+.download-bar-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .download-bar {
+    background-color: #2F3A56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px; /* فضای داخلی عمودی بیشتر */
+    border-radius: 10px;
+    width: 100%; /* تغییر عرض به 100% برای پر کردن کل عرض صفحه */
+    max-width: 1200px; /* محدود کردن عرض به 1200px */
+    /* height: 120px; ارتفاع همچنان به همون شکل */
+  }
+  
+  
+  
+  .buttons-container {
+    display: flex;
+    gap: 20px; /* افزایش فاصله بین لینک‌ها */
+  }
+  
+  .option-buttons {
+    background-color: white;
+    height: 40px; /* تعیین ارتفاع دقیق دکمه */
+    padding: 0 10px; /* حذف padding عمودی */
+    margin-top: 10px; /* دکمه را کمی پایین‌تر می‌آورد */
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* کمی بزرگتر برای راحتی کاربر */
+  }
+  
+  .option-buttons:hover {
+    background-color: white !important; /* رنگ پس‌زمینه هاور به سفید تغییر می‌کند */
+    color: inherit; /* رنگ متن هنگام هاور تغییر نمی‌کند */
+    box-shadow: none; /* حذف سایه‌ها */
+    transform: none; /* حذف هرگونه تغییر در موقعیت */
+  }
+  
+  .image-link img {
+    width: 144px; /* افزایش اندازه تصاویر لینک‌ها */
+    height: 64px;
+  }
+  
+  .app-download {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* فاصله بیشتر بین دکمه و متن */
+  }
+  
+  .text {
+    color: white;
+    font-size: 18px; /* اندازه فونت بزرگتر می‌شود */
+    font-weight: bold;
+  }
+  
+  .download-button {
+    background-color: #2F3A56; /* رنگ پس‌زمینه دکمه */
+    color: white;
+    padding: 12px; /* فضای داخلی */
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px; /* اندازه متن */
+    display: inline-flex; /* به صورت inline-flex برای نگه داشتن تصویر */
+    align-items: center; /* تراز کردن تصویر */
+    justify-content: center; /* تراز کردن تصویر */
+  }
+  
+  .download-button img {
+    width: 40px; /* اندازه تصویر */
+    height: auto;
+  }
+  
+
+
+  .option-button:hover,
+.image-link:hover img,
+.download-button:hover {
+  /* حذف هرگونه تغییر در هنگام هاور */
+  background-color: inherit;
+  color: inherit;
+  transform: none;
+  box-shadow: none;
+}
+
+  

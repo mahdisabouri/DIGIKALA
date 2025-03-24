@@ -1,0 +1,119 @@
+/* FooterLinks.module.css */
+.footerLinksSection {
+  background-color: #f5f5f5; /* پس‌زمینه خاکستری روشن */
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linksWrapper {
+  display: flex;
+  flex-wrap: wrap; /* برای چیدمان در چند خط */
+  justify-content: center;
+  gap: 0; /* بدون فاصله بین باکس‌ها */
+  width: 100%; /* کل عرض صفحه بدون محدودیت */
+  margin: 0 auto; /* وسط‌چینی */
+}
+
+.linkItem {
+  flex: 1 1 200px; /* عرض حداقل هر باکس رو عریض‌تر کردیم */
+  max-width: 300px; /* عرض حداکثر رو هم بیشتر کردیم */
+  height: 90px; /* ارتفاع همون قبلی بمونه */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f1; /* پس‌زمینه سفید برای هر باکس */
+  border: 1px solid #f0f0f1; /* خطوط خاکستری برای جداسازی */
+  border-left: none; /* حذف خط سمت چپ برای چسبیدن باکس‌ها */
+  border-top: none; /* حذف خط بالا برای چسبیدن باکس‌ها */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* افکت‌ها */
+}
+
+.linkItem:hover {
+  background-color: #f0f0f0; /* تغییر رنگ پس‌زمینه هنگام هاور */
+  transform: scale(1.02); /* بزرگ‌نمایی کوچک هنگام هاور */
+}
+
+/* استایل تصاویر */
+.linkImage {
+  max-width: 80%; /* همون اندازه قبلی */
+  max-height: 40px; /* همون اندازه قبلی */
+  height: auto;
+  object-fit: contain; /* حفظ نسبت تصویر */
+}
+
+/* خطوط عمودی و افقی با گرادیانت */
+.linkItem:not(:last-child) {
+  border-left: 1px solid transparent; /* خط عمودی */
+  border-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.1)
+  ) 1;
+}
+
+/* خط افقی برای ردیف‌های مختلف */
+.linksWrapper .linkItem:nth-child(8n + 1),
+.linksWrapper .linkItem:nth-child(8n + 2),
+.linksWrapper .linkItem:nth-child(8n + 3),
+.linksWrapper .linkItem:nth-child(8n + 4),
+.linksWrapper .linkItem:nth-child(8n + 5),
+.linksWrapper .linkItem:nth-child(8n + 6),
+.linksWrapper .linkItem:nth-child(8n + 7),
+.linksWrapper .linkItem:nth-child(8n + 8) {
+  border-top: 1px solid transparent; /* خط افقی */
+  border-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.1)
+  ) 1;
+}
+
+/* پاسخ‌گویی برای دستگاه‌های کوچک */
+@media (max-width: 768px) {
+  .linkItem {
+    flex: 1 1 150px; /* عرض کمتر در موبایل */
+    max-width: 200px; /* تنظیم برای موبایل */
+    height: 50px;
+  }
+
+  .linkImage {
+    max-height: 30px; /* ارتفاع کمتر در موبایل */
+  }
+
+  .linksWrapper .linkItem:nth-child(4n + 1),
+  .linksWrapper .linkItem:nth-child(4n + 2),
+  .linksWrapper .linkItem:nth-child(4n + 3),
+  .linksWrapper .linkItem:nth-child(4n + 4) {
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.1)
+    ) 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .linkItem {
+    flex: 1 1 50%; /* دو آیتم در هر ردیف */
+    max-width: none;
+  }
+
+  .linksWrapper .linkItem:nth-child(2n + 1),
+  .linksWrapper .linkItem:nth-child(2n + 2) {
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.1)
+    ) 1;
+  }
+}

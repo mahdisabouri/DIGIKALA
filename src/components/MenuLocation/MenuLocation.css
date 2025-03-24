@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'IRANYekan', sans-serif;
+}
+
+.menu-location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    border: none;
+}
+
+.location-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.location-icon {
+    font-size: 18px;
+    color: #444;
+}
+
+select {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* فاصله بین آیتم‌ها */
+    position: relative; /* برای موقعیت‌دهی صفحه کوچیک */
+}
+
+.menu-items span {
+    color: #626662;
+    font-weight: 400;
+    line-height: 2.17;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.menu-items span:hover {
+    color: #d32f2f;
+}
+
+.menu-icon {
+    margin-right: 5px;
+}
+
+.menu-category {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* استایل صفحه کوچیک برای دسته‌بندی */
+.category-details {
+    position: absolute;
+    top: 100%; /* زیر منوی همبرگری */
+    right: 0; /* از سمت راست باز می‌شه */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 200px; /* عرض ثابت */
+    height: auto; /* ارتفاع بر اساس محتوا */
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.category-details span {
+    padding: 5px 0;
+    color: #333;
+    cursor: pointer;
+}
+
+.category-details span:hover {
+    color: #d32f2f;
+    background-color: #f0f0f0;
+}
+
+/* نمایش منوی همبرگری در صفحه‌های کوچک */
+@media (max-width: 768px) {
+    .menu-items {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,42 @@
+/* استایل‌دهی برای NewPromoSlider */
+.new-promo-wrapper {
+    display: flex;
+    justify-content: center; /* وسط‌چین افقی */
+    align-items: center; /* وسط‌چین عمودی */
+     /* کل ارتفاع صفحه رو بگیره */
+  background: white;
+  }
+  
+  .new-promo-slider {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+    scrollbar-width: none;
+  }
+  
+  .new-promo-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;   
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #333; /* تغییر رنگ متن به تیره */
+    background: none; /* حذف پس‌زمینه */
+  }
+  
+  .new-promo-item img {
+    width: 286px;
+    height: 279px;
+    border-radius: 10px;
+    border: 2px solid black;
+    border: none;
+  }
+  
+  

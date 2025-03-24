@@ -1,0 +1,46 @@
+.sliderContainer {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slideItem {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.slideImage {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+/* استایل دکمه‌ها */
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6); /* همیشه قابل مشاهده */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}

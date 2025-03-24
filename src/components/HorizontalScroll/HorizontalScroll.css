@@ -1,0 +1,116 @@
+/* استایل‌های مربوط به اسکرول افقی
+.scroll-container {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .scroll-content {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .scroll-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .scroll-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #e91e63;
+  }
+  
+  .scroll-item p {
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px 10px;
+    z-index: 10;
+  }
+  
+  .scroll-btn.left {
+    left: 0;
+  }
+  
+  .scroll-btn.right {
+    right: 0;
+  }
+   */
+
+
+   /* استایل‌های مربوط به اسکرول افقی */
+.scroll-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 50px;
+    position: relative;
+  }
+  
+  p { 
+    font-weight: bold;
+  }
+  .scroll-content {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .scroll-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .scroll-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #e91e63;
+  }
+  
+  .scroll-item p {
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px 10px;
+    z-index: 10;
+  }
+  
+  .scroll-btn.left {
+    left: 10px;
+  }
+  
+  .scroll-btn.right {
+    right: 10px;
+  }

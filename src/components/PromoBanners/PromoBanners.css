@@ -1,0 +1,58 @@
+.promo-banners-container {
+    margin-top: 40px; /* افزایش فاصله از کامپوننت قبلی */
+  }
+  
+  .logos-banner {
+    width: 40%;
+    max-width: 1200px;
+    margin: 40px auto; /* فاصله بالا و پایین اضافه شد */
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center; /* کل هدر وسط */
+    align-items: center; /* عمودی هم وسط باشه */
+    margin-bottom: 15px; /* فاصله زیر هدر رو کمتر کردم */
+    direction: rtl; /* برای متن فارسی */
+  }
+  
+  .header-text {
+    font-size: 20px; /* اندازه فونت رو کوچکتر کردم */
+    font-weight: bold;
+    margin-left: 8px; /* فاصله بین متن و آیکون رو کمتر کردم */
+  }
+  
+  .star-icon {
+    width: 16px; /* اندازه آیکون رو کوچکتر کردم */
+    height: 16px;
+    background-image: url('../../assets/icons8-star-16.png');
+    background-size: cover;
+    display: inline-block;
+  }
+  .logos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 10px; /* فاصله مناسب بین آیتم‌ها */
+  }
+  
+  .logo-link {
+    text-align: center;
+    background: white; /* پس‌زمینه سفید برای حس بیرون‌زدگی */
+    transition: all 0.3s ease-in-out;
+    min-width: 100px; /* برای اطمینان از چینش درست */
+  }
+  
+  .logo-link:hover {
+    transform: scale(1.05); /* جلوه‌ای که باعث بیرون‌زدگی بیشتر می‌شود */
+  }
+  
+  .brand-logo {
+    width: 80px;
+    height: auto;
+  }
+  

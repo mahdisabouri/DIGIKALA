@@ -1,0 +1,100 @@
+.table-1 {
+  /* background-color: #2F3A56;  */
+  font-family: Arial, sans-serif;
+  padding: 15px;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* مرکز کردن محتوا */
+}
+
+.table-1 h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  direction: ltr;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-size: 18px;
+  color: #333;
+}
+
+td {
+  font-size: 18px;
+}
+
+.product-images {
+  width: 80px;
+  height: auto;
+  max-height: 80px;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* افزودن انتقال برای افکت بزرگ‌نمایی */
+}
+
+.placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 10px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.3s ease; /* افزودن انتقال برای افکت بزرگ‌نمایی */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); /* افکت بزرگ‌نمایی هنگام هاور */
+}
+
+/* افکت بزرگ شدن برای دسته‌بندی، نام محصول و تصویر هنگام hover */
+.category-link:hover,
+.product-name:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* استایل برای لینک */
+.category-link {
+  color: black;
+  text-decoration: none;
+}
+
+.category-link:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.product-images:hover{
+  transform: scale(2.2);
+  transition: transform 0.3s ease;
+}

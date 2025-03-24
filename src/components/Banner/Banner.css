@@ -1,0 +1,13 @@
+/* مسیر فایل: src/components/Banner/Banner.css */
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  

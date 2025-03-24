@@ -1,0 +1,141 @@
+
+
+/* تنظیمات کلی برای بنر */
+.banner {
+  
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+  background: white;
+  margin-top: 0;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  display: flex; /* استفاده از flexbox برای وسط‌چین کردن */
+  justify-content: center; /* وسط‌چین افقی */
+  align-items: center; /* وسط‌چین عمودی */
+  flex-direction: column; /* اگر نیاز دارید که محتویات به صورت عمودی نمایش داده شوند */
+}
+
+/* محتوای بنر */
+.banner-content {
+  border-radius: 10px;
+  border: 2px solid rgb(121, 121, 121);
+  border-radius: 10px;
+  /* outline:3px solid silver; */
+  background: url("../../assets/پس\ زمینه.svg");
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* چیدمان افقی با فاصله مناسب */
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px 50px;
+  position: relative;
+  transform: scale(0.8); /* کوچک کردن محتوای بنر به اندازه 80% */
+  transform-origin: center center; /* مرکز مقیاس‌دهی */
+  /* width: 100%; عرض 100% */
+  flex-wrap: nowrap; /* جلوگیری از شکستن محتویات به چند خط */
+}
+
+/* متن "بیش از 100 کالا" */
+.product-count {
+  color: #28a745;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0; /* حذف فاصله پایین */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* فاصله بین آیکون و متن */
+  margin-right: 20px; /* فاصله از سمت راست */
+  font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.17;
+}
+
+/* استایل آیکون */
+.product-count-icon {
+  width: 24px; /* اندازه آیکون */
+  height: 24px;
+}
+
+/* استایل تصاویر محصولات */
+.product-imagess {
+  background: url("../../assets/پس\ زمینه.svg");
+  
+  display: flex;
+  align-items: center;
+  justify-content: center; /* وسط‌چین کردن محصولات */
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.product {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* نمایش محصولات به صورت عمودی */
+  align-items: center;
+}
+
+.product img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* دایره‌ای کردن تصاویر محصولات */
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* سایه اطراف تصاویر */
+}
+
+/* حذف حاشیه از دور تصاویر محصولات */
+.product img {
+  border: none; /* حذف حاشیه */
+}
+
+.discount-tag {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red; /* پس‌زمینه قرمز درصد تخفیف */
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+/* استایل تصویر تخفیف */
+.discount-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px; /* فضای خالی بین محصولات و سبد خرید */
+}
+
+.discount-image img {
+  width: 200px; /* تنظیم اندازه تصویر */
+  height: auto;
+  border-radius: 8px; /* گوشه‌های گرد تصویر */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* سایه به تصویر */
+  cursor: pointer;
+}
+
+/* استایل سبد خرید */
+.shopping-cart {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: f4f4f4; /* تغییر پس‌زمینه سبد خرید به پس‌زمینه سایت */
+  padding: 10px;
+  border-radius: 50%; /* دایره‌ای کردن سبد خرید */
+}
+
+.shopping-cart img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50%; /* دایره‌ای کردن سبد خرید */
+  border: none; /* حذف حاشیه */
+}

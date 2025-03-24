@@ -1,0 +1,185 @@
+/* FooterSection.module.css */
+.footerSection {
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* برای قرار گرفتن خطوط بالا و پایین */
+  justify-content: center;
+  align-items: center;
+  direction: rtl; /* جهت راست به چپ برای فارسی */
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0; /* حذف فاصله بین عناصر داخلی */
+}
+
+.certificationsWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.badgeContainer {
+  width: 120px;
+  height: 150px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* سایه ظریف */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* استایل تصاویر لوگو */
+.enamadLogo img,
+.virtualBusinessLogo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* حفظ نسبت تصویر */
+}
+
+.samandehiLogo img {
+  width: 85%;
+  height: auto;
+  object-fit: contain; /* حفظ نسبت تصویر */
+}
+
+/* استایل بلوک متن */
+.footerTextBlock {
+  max-width: 600px; /* حداکثر عرض برای خوانایی بهتر */
+  text-align: right; /* تراز متن به راست برای فارسی */
+  margin: 0; /* حذف فاصله‌ها */
+}
+
+/* استایل خط عمودی بین متن و لوگوها */
+.divider {
+  width: 2px; /* ضخامت خط */
+  height: 150px; /* ارتفاع خط برابر با ارتفاع لوگوها */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1), /* کمرنگ در بالا */
+    rgba(0, 0, 0, 0.8), /* پررنگ در وسط */
+    rgba(0, 0, 0, 0.1) /* کمرنگ در پایین */
+  );
+  margin: 0 10px; /* فاصله کوچک از دو طرف */
+}
+
+/* استایل خط افقی بالا */
+.topDivider {
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.1), /* کمرنگ در ابتدا */
+    rgba(0, 0, 0, 0.8), /* پررنگ در وسط */
+    rgba(0, 0, 0, 0.1) /* کمرنگ در انتها */
+  );
+  margin: 0 auto 10px; /* فاصله پایین برای جدا کردن از محتوا */
+}
+
+/* استایل خط افقی پایین */
+.bottomDivider {
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.1), /* کمرنگ در ابتدا */
+    rgba(0, 0, 0, 0.8), /* پررنگ در وسط */
+    rgba(0, 0, 0, 0.1) /* کمرنگ در انتها */
+  );
+  margin: 10px auto 0; /* فاصله بالا، بدون فاصله پایین */
+}
+
+/* استایل متن کپی‌رایت */
+.copyrightText {
+  font-size: 0.9rem; /* اندازه فونت کمی کوچک‌تر */
+  color: #000000; /* رنگ خاکستری ملایم */
+  text-align: center; /* وسط‌چین کردن متن */
+  margin: 0; /* حذف فاصله‌ها */
+  padding-top: 20px; /* بدون فاصله از خط بالا */
+  width: 100%; /* عرض کامل برای وسط‌چین شدن */
+  font-weight: bold;
+}
+
+/* استایل‌های بدون تغییر */
+.footerTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footerDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.seeMoreLink {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.seeMoreLink:hover {
+  text-decoration: underline;
+}
+
+.badgeContainer a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+/* پاسخ‌گویی برای دستگاه‌های کوچک */
+@media (max-width: 768px) {
+  .footerSection {
+    gap: 0; /* حذف فاصله در موبایل */
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .certificationsWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerTextBlock {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .divider {
+    width: 80%; /* تبدیل به خط افقی در موبایل */
+    height: 2px;
+    background: linear-gradient(
+      to right,
+      rgba(4, 134, 241, 0.938)
+      ,
+      rgba(4, 134, 241, 0.938)
+      ,
+      rgba(4, 134, 241, 0.938)
+      );
+    margin: 10px auto; /* فاصله کوچک در موبایل */
+  }
+
+  .topDivider,
+  .bottomDivider {
+    width: 90%; /* عرض بیشتر در موبایل */
+  }
+
+  .copyrightText {
+    font-size: 0.8rem; /* اندازه فونت کمی کوچک‌تر در موبایل */
+    padding: 0 10px; /* فاصله از کناره‌ها در موبایل */
+  }
+}
+
